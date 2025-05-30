@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <title>Погода в Москве</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
+  <button class="toggle-btn" onclick="toggleTheme()">🌓</button>
   <div class="emoji">{{ emoji }}</div>
   <div class="label">{{ label }} в Москве</div>
 </body>
