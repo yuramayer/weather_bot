@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Погода в Москве</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <button class="toggle-btn" onclick="toggleTheme()">🌓</button>
-  <div class="emoji">{{ emoji }}</div>
-  <div class="label">{{ label }} в Москве</div>
+  <div id="emoji" class="emoji">⏳</div>
+  <div id="label" class="label">Загрузка...</div>
 
   <a href="https://github.com/yuramayer" class="github-link" target="_blank" aria-label="GitHub">
     <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor" aria-hidden="true">
@@ -17,6 +17,5 @@
     </svg>
     <span>@yuramayer</span>
   </a>
-  
 </body>
 </html>
